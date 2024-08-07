@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  rhtap/gitops: test1-chatbot-aug7 
+  janus-idp.io/tekton: test1-chatbot-aug7
+  backstage.io/kubernetes-id: test1-chatbot-aug7
+  backstage.io/kubernetes-namespace: rhtap-app 
+  app.kubernetes.io/part-of: test1-chatbot-aug7
+resources: 
+- application-dev.yaml
